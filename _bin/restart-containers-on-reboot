@@ -1,0 +1,149 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          restart-containers-on-reboot
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start prutor docker containers at boot time
+# Description:       Enable Prutor.
+### END INIT INFO
+
+SLEEPTIME=5
+#---------------------------------------------------------------------
+# stage 1 : a single node 
+#---------------------------------------------------------------------
+node="discovery"
+docker start $node
+sleep $SLEEPTIME # to give some time to startup
+docker exec $node bash -c "cd / && supervisorctl stop all && rm -fr /root/consul && supervisorctl reload"
+AGENT_ADDR=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $node)
+echo "$node up with IP=${AGENT_ADDR}"
+
+#---------------------------------------------------------------------
+# stage 2 : 
+#---------------------------------------------------------------------
+stage2nodes="nosql rdb webproxy cache ctutor"
+for node in $stage2nodes
+do
+    docker start $node
+done
+sleep $SLEEPTIME # to give some time to startup
+for node in $stage2nodes
+do
+    docker exec $node sed -i "s/^environment=AGENT_ADDR=.*\$/environment=AGENT_ADDR=${AGENT_ADDR}/" /etc/supervisord.conf
+    docker exec $node bash -c "cd / supervisorctl stop all && rm -fr /root/consul && supervisorctl reload"
+    echo "$node up"
+done
+ADDR_nosql=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' nosql)
+ADDR_rdb=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' rdb)
+ADDR_cache=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' cache)
+sleep $SLEEPTIME
+
+#---------------------------------------------------------------------
+# stage 3 : All Engines
+#---------------------------------------------------------------------
+ENGINES=$(docker ps -a | grep prutor/engine | awk '{print $1}')
+WEBAPPS=$(docker ps -a | grep prutor/webapp | awk '{print $1}')
+for node in $ENGINES $WEBAPPS
+do
+    docker start $node
+done
+sleep $SLEEPTIME # to give some time to startup
+for node in $ENGINES $WEBAPPS
+do
+    docker exec $node sed -i "s/^environment=AGENT_ADDR=.*$/environment=AGENT_ADDR=${AGENT_ADDR}/" /etc/supervisord.conf
+    docker exec $node bash -c "cd / && supervisorctl stop all && rm -fr /root/consul && supervisorctl reload"
+    docker exec $node sed -i "s/^DB_HOST=.*$/DB_HOST=${ADDR_rdb}/" /etc/environment
+    docker exec $node sed -i "s/^NOSQL_HOST=.*$/NOSQL_HOST=${ADDR_nosql}/" /etc/environment
+    docker exec $node sed -i "s/^CACHE_ADDR=.*$/CACHE_ADDR=${ADDR_cache}/" /etc/environment
+    docker exec $node sed -i "s/^AGENT_ADDR=.*$/AGENT_ADDR=${AGENT_ADDR}/" /etc/environment
+    echo "$node up"
+done
+
+#---------------------------------------------------------------------
+# stage 4 : All Webapps need restart
+#---------------------------------------------------------------------
+for node in $WEBAPPS
+do
+    docker exec $node node-restart
+done
+
+#---------------------------------------------------------------------
+# stage 5 : All "running" Feedback tools need restart
+#---------------------------------------------------------------------
+
+#---------------------------------------------------------------------
+# Helper functions
+#---------------------------------------------------------------------
+# check if container is started earlier
+function is_started() {
+    docker ps -a | grep -q $1
+    return $?
+}
+
+# run an already started container
+function run_if_started() {
+    if is_started $1; then
+	docker start $1
+	return 0 # running => success
+    fi
+    return -1 # not running => failure
+}
+
+# set environments for a container
+function set_env() {
+    node=$1
+    docker exec $node sed -i "s/^DB_HOST=.*$/DB_HOST=${ADDR_rdb}/" /etc/environment
+    docker exec $node sed -i "s/^NOSQL_HOST=.*$/NOSQL_HOST=${ADDR_nosql}/" /etc/environment
+    docker exec $node sed -i "s/^CACHE_ADDR=.*$/CACHE_ADDR=${ADDR_cache}/" /etc/environment
+    docker exec $node sed -i "s/^AGENT_ADDR=.*$/AGENT_ADDR=${AGENT_ADDR}/" /etc/environment
+    echo "Update Container IP in configuration table in datbase"
+    IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $node)
+    echo "Tool: $node, IP: $IP"
+
+    row=${rowmap[$node]}
+    port=`echo $row    | cut -d: -f1`
+    section=`echo $row | cut -d: -f2`
+    setting=`echo $row | cut -d: -f3`
+    mysql its -u prutor -ptoor -h ${ADDR_rdb} << EOF
+use its; update configuration set value='["$IP:$port"]' where section='$section' and setting='$setting'
+EOF
+}
+
+#---------------------------------------------------------------------
+#for Turtle logo support
+run_if_started simplecpp
+
+feedbacks="escompiler esc-feedback escrepair grade-predict"
+feedbacks="escompiler escrepair"
+declare -A rowmap
+# format: rowmap[tool] => PORT:SECTION:SETTING
+
+rowmap["escompiler"]="80:ON_COMPILE:ESCOMPILER"
+rowmap["esc-feedback"]="8080:ON_ACCEPTED:ESC-FEEDBACK"
+rowmap["esc-feedback-dup"]="8080:ON_EVALUATE:ESC-FEEDBACK"
+rowmap["escrepair"]="3001:PRE_COMPILE:ESCREPAIR"
+rowmap["grade-predict"]="5000:PRE-GRADE:GRADE-PREDICT"
+for node in $feedbacks
+do
+    run_if_started $node && set_env $node
+done
+
+# if a feedback tool has multiple rows, use the other rows here...
+# format: NAME:PORT:SECTION:SETTING
+for nodemap in "esc-feedback:8080:ON_EVALUATE:ESC-FEEDBACK"
+do
+    node=`echo $nodemap    | cut -d: -f1`
+    port=`echo $nodemap    | cut -d: -f2`
+    section=`echo $nodemap | cut -d: -f3`
+    setting=`echo $nodemap | cut -d: -f4`
+    if is_started $node; then
+	IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $node)
+	echo "Tool: $node, IP: $IP"
+	mysql its -u prutor -ptoor -h ${ADDR_rdb} << EOF
+use its; update configuration set value='["$IP:$port"]' where section='$section' and setting='$setting'
+EOF
+    fi
+done
+

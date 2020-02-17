@@ -1,0 +1,4 @@
+#!/bin/bash
+. ../config/_config.ini
+
+git --git-dir=$REPO_BASE/engine/.git --work-tree=/codebase/engine pull origin master

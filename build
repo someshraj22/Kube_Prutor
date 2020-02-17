@@ -1,0 +1,77 @@
+#!/bin/bash
+starttime=`date`
+. ./_config/config.ini
+. ./_config/env.ini
+
+# Copy local repository sources.list
+if [ $CACHE -eq 1 ]
+then
+    cp _config/sources.list cache_v1/sources.list
+fi
+if [ $ENGINE -eq 1 ]
+then
+    cp _config/sources.list engine_v1/sources.list
+fi
+if [ $NOSQL -eq 1 ]
+then
+    cp _config/sources.list nosql_v1/sources.list
+fi
+if [ $RDB -eq 1 ]
+then
+    cp _config/sources.list rdb_v1/sources.list
+fi
+if [ $WEBAPP -eq 1 ]
+then
+    cp _config/sources.list webapp_v1/sources.list
+fi
+if [ $WEBPROXY -eq 1 ]
+then
+    cp _config/sources.list webproxy_v1/sources.list
+fi
+
+if [ $CTUTOR -eq 1 ]
+then
+    cp _config/sources.list ctutor_v1/sources.list
+fi
+
+# copy deployment keys
+cp _config/id_rsa* webapp_v1/
+cp _config/id_rsa* engine_v1/
+cp _config/id_rsa* utility_v1/
+
+
+# copy env
+cp _config/env.ini webapp_v1/
+cp _config/env.ini engine_v1/
+cp _config/env.ini escompiler_v1/
+
+# function for building containers
+function build_container()
+{
+    CNAME=$1
+    echo ======Building Container $CNAME===========
+    cd ./$CNAME
+    docker build -t prutor/$CNAME . || exit 1
+    cd ..
+}
+
+
+# Fix USER and PASSWD for nosql and rdb containers
+sed -i "s/CREATE USER 'prutor'@'%' IDENTIFIED BY .*/CREATE USER 'prutor'@'%' IDENTIFIED BY '$DB_PASS'\"/g" rdb/Dockerfile
+sed -i "s/pwd:.*/pwd: \"$NOSQL_PASS\",/g" nosql/user.js
+
+#build_container cache_v1
+#build_container engine_v1
+#build_container nosql_v1
+build_container rdb_v1
+#build_container webapp_v1
+#build_container webproxy_v1
+#build_container escompiler_v1
+#build_container ctutor_v1
+
+
+
+echo "All images built."
+echo "Build started at $starttime"
+echo "Build ended at `date`"
+

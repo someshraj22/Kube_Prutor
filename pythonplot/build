@@ -1,0 +1,19 @@
+#!/bin/bash
+starttime=`date`
+# function for building containers
+function build_container()
+{
+    CNAME=$1
+    echo ======Building Container $CNAME===========
+    #cd ./$CNAME
+    docker build -t prutor/$CNAME . || exit 1
+    cd ..
+}
+
+build_container pythonplot
+
+echo "All images built."
+echo "Build started at $starttime"
+echo "Build ended at `date`"
+
+

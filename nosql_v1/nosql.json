@@ -1,0 +1,11 @@
+{
+	"service": {
+		"name": "its.nosql",
+		"tags": ["mongodb"],
+		"port": 27017,
+		"check": {
+			"script": "mongo --eval \"printjson('Hi')\"",
+			"interval": "10s"
+		}
+	}
+}

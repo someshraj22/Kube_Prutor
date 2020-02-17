@@ -1,0 +1,11 @@
+{
+	"service": {
+		"name": "its.web",
+		"tags": ["nodejs"],
+		"port": 3000,
+		"check": {
+                        "script": "curl localhost:3000 >/dev/null 2>&1",
+                        "interval": "10s"
+                }
+	}
+}

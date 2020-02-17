@@ -1,0 +1,3 @@
+listen web
+	bind *:80
+	server dummy 127.0.0.1:8000 maxconn 10

@@ -1,0 +1,45 @@
+#!/bin/bash
+
+AGENT_ADDR=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' discovery)
+CACHE_ADDR=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' cache)
+RDB_ADDR=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' rdb)
+NOSQL_ADDR=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' nosql)
+OPT_ADDR=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' ctutor)
+
+if [ x"$DEPLOY" == "x" ]; then
+    cp ../_config/env.ini ./env.tmp # standalone
+    . ../_config/config.ini
+else  
+    cp ./_config/env.ini ./env.tmp  # from deploy script
+    . ./_config/config.ini
+fi
+
+sed -i 's/CACHE_ADDR=0.0.0.0/CACHE_ADDR='$CACHE_ADDR'/g' env.tmp
+sed -i 's/DB_HOST=0.0.0.0/DB_HOST='$RDB_ADDR'/g' env.tmp
+sed -i 's/NOSQL_HOST=0.0.0.0/NOSQL_HOST='$NOSQL_ADDR'/g' env.tmp
+sed -i 's/OPT_HOST=0.0.0.0/OPT_HOST='$OPT_ADDR'/g' env.tmp
+
+WEBAPPS=$(docker ps | grep prutor/webapp | awk '{print $1}')
+
+MAX=0
+for W in $WEBAPPS
+do
+NAME=$(docker inspect --format '{{ .Name }}' $W)
+INDEX=${NAME:7}
+if [ $INDEX -gt $MAX ]
+then
+MAX=$INDEX
+fi
+done
+
+INDEX=$((MAX+1))
+node=webapp$INDEX
+
+docker run --privileged -d --name $node -e "AGENT_ADDR=$AGENT_ADDR" --env-file="env.tmp" -v $REPO_BASE/webapp:/var/www prutor/webapp
+# Register with the discovery agent.
+docker exec $node sed -i "s/^environment=AGENT_ADDR=.*$/environment=AGENT_ADDR=${AGENT_ADDR}/" /etc/supervisord.conf
+sleep 5
+docker exec $node bash -c "cd / && supervisorctl stop all && rm -fr /root/consul && supervisorctl reload"
+#rm ./env.tmp
+
+echo "upscaled."

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+VARS=$(cat /etc/environment | grep -E "^(NOSQL|DB|CACHE|ENGINE|COURSE)_*")
+
+for x in $VARS
+do
+    export $x
+done
+
+forever stop 0
+forever start --sourceDir /var/www bin/www

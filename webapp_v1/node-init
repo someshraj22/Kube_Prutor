@@ -1,0 +1,6 @@
+#!/bin/bash
+
+env > /etc/environment
+/usr/bin/node-restart
+
+supervisord -c /etc/supervisord.conf

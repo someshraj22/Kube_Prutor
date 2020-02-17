@@ -1,0 +1,11 @@
+{
+	"name": "ESCOMPILER",
+	"services": [
+		{
+			"trigger": "on_compile",
+			"containers": ["escompiler"],
+			"port": 80,
+			"endpoint": "/"
+		}
+	]
+}

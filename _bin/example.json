@@ -1,0 +1,11 @@
+{
+	"name": "MY-FEEDBACK",
+	"services": [
+		{
+			"trigger": "on_evaluate",
+			"containers": ["feedback"],
+			"port": 8080,
+			"endpoint": "/feedback"
+		}
+	]
+}

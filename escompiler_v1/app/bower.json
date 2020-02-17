@@ -1,0 +1,20 @@
+{
+  "name": "escompiler",
+  "version": "0.0.0",
+  "authors": [
+    "Rajdeep Das <rajdeepd@iitk.ac.in>"
+  ],
+  "description": "Compiler message based feedback tool",
+  "main": "index.php",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "PHP"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}

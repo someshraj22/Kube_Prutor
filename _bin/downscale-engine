@@ -1,0 +1,22 @@
+#!/bin/bash
+
+ENGINES=$(docker ps | grep prutor/engine | awk '{print $1}')
+
+MAX=0
+for E in $ENGINES
+do
+NAME=$(docker inspect --format '{{ .Name }}' $E)
+INDEX=${NAME:7}
+if [ $INDEX -gt $MAX ]
+then
+MAX=$INDEX
+fi
+done
+
+NAME=engine$MAX
+
+docker exec $NAME consul leave
+docker stop $NAME
+docker rm $NAME
+
+echo "downscaled."

@@ -1,0 +1,58 @@
+#!/bin/bash
+starttime=`date`
+# Signal other scripts that we are in Deploy mode
+export DEPLOY=1
+
+. ./_config/config.ini
+
+if [ 'x$USE_UTILITY' = 'x1' ]; then
+    docker run -d --name utility -v $REPO_BASE:$REPO_BASE prutor/utility
+    docker exec utility touch /root/.ssh/config
+    docker exec utility sed -i '$ a\\n\nHost '$REPO_HOST'\n        StrictHostKeyChecking no' /root/.ssh/config
+    docker exec utility git clone $WEBAPP_SRC $REPO_BASE/webapp
+    docker exec utility git clone $ENGINE_SRC $REPO_BASE/engine
+else
+    #touch /root/.ssh/config
+    #sed -i '$ a\\n\nHost '$REPO_HOST'\n        StrictHostKeyChecking no' /root/.ssh/config
+    #touch ~/.ssh/config
+    #sed -i '$ a\\n\nHost '$REPO_HOST'\n        StrictHostKeyChecking no' ~/.ssh/config
+    #git clone $WEBAPP_SRC $REPO_BASE/webapp
+    #git clone $ENGINE_SRC $REPO_BASE/engine
+fi
+
+ID=$(docker run -d --name discovery -p $CSPORT:80 prutor/discovery)
+AGENT_ADDR=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $ID)
+
+docker run -d --name nosql             -e "AGENT_ADDR=$AGENT_ADDR" prutor/nosql
+docker run -d --name rdb      -p $DBPORT:80 -e "AGENT_ADDR=$AGENT_ADDR" prutor/rdb
+docker run -d --name webproxy -p $APPORT:80 -e "AGENT_ADDR=$AGENT_ADDR" prutor/webproxy
+docker run -d --name cache             -e "AGENT_ADDR=$AGENT_ADDR" prutor/cache
+docker run -d --name ctutor -p $OPTPORT:8003	-e "AGENT_ADDR=$AGENT_ADDR" prutor/ctutor
+
+sleep 120
+docker exec nosql mongo its /tmp/user.js
+docker exec nosql mongo its /tmp/init_mongo.js
+./_bin/add-its-user
+
+for ((i=1;i<=$NUM_WEBAPP;i++))
+do
+    ./_bin/upscale-webapp 
+done
+
+for ((i=1;i<=$NUM_ENGINE;i++))
+do
+    ./_bin/upscale-engine
+done
+
+RDB_ADDR=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' rdb)
+cp ./_config/env.ini env.tmp
+sed -i 's/DB_HOST=0.0.0.0/DB_HOST='$RDB_ADDR'/g' env.tmp
+docker run -d --name escompiler -p $COPORT:80 --env-file=env.tmp prutor/escompiler
+rm env.tmp
+
+# Due to some circular interdependencies, we need to restart all the containers 
+echo "Restarting all containers to resolve circular interdependencies"
+./_bin/restart-containers-on-reboot
+echo "Started at $starttime"
+echo "Ended at `date`"
+echo "All Done. Happy PRUTORing"

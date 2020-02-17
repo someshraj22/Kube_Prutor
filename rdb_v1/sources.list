@@ -1,0 +1,5 @@
+deb http://archive.ubuntu.com/ubuntu trusty main universe restricted multiverse
+deb http://archive.ubuntu.com/ubuntu trusty-updates restricted main universe multiverse
+deb http://archive.ubuntu.com/ubuntu trusty-proposed restricted main universe multiverse
+deb http://archive.ubuntu.com/ubuntu trusty-backports restricted main universe multiverse
+deb http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse

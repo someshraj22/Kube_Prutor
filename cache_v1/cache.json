@@ -1,0 +1,7 @@
+{
+	"service": {
+		"name": "its.cache",
+		"tags": ["memcached"],
+		"port": 11211
+	}
+}

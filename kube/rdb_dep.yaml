@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: rdb-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rdb
+  template:
+    metadata:
+      labels:
+        app: rdb
+    spec:
+      containers:
+      - name: rdb
+        image: prutor/rdb_v1
+        ports:
+        - containerPort: 80
+        - containerPort: 3306
+        imagePullPolicy: Never
+        volumeMounts:
+          - name: rdb-volume-mount
+            mountPath: /var/lib/mysql
+      volumes:
+      - name: rdb-volume-mount
+        persistentVolumeClaim:
+          claimName: rdb-pvc
+      restartPolicy: Always

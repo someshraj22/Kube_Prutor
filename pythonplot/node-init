@@ -1,0 +1,8 @@
+#!/bin/bash
+
+env > /etc/environment
+
+service apache2 start
+
+tail -f /dev/null
+

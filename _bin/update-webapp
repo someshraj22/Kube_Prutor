@@ -1,0 +1,10 @@
+#!/bin/bash
+. ../config/_config.ini
+git --git-dir=$REPO_BASE/webapp/.git --work-tree=/codebase/webapp pull origin master
+
+INSTANCES=$(docker ps | grep prutor/webapp | awk '{print $1}')
+
+for CONTAINER in $INSTANCES
+do
+docker exec $CONTAINER node-restart
+done

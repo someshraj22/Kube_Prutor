@@ -1,0 +1,8 @@
+#!/bin/bash
+
+env > /etc/environment
+
+service apache2 start
+service rsyslog start
+
+supervisord -c /etc/supervisord.conf

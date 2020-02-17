@@ -1,0 +1,34 @@
+#!/bin/bash
+
+. ./_config/config.ini
+
+# function for cleaning containers
+function clean_container()
+{
+    docker stop $1
+    docker rm $1
+}
+
+clean_container utility
+clean_container rdb
+clean_container nosql
+clean_container webproxy
+clean_container cache
+clean_container discovery
+clean_container escompiler
+clean_container ctutor
+
+for ((i=1;i<=$NUM_WEBAPP;i++))
+do
+	clean_container webapp$i
+done
+
+for ((i=1;i<=$NUM_ENGINE;i++))
+do
+	clean_container engine$i
+done
+
+#rm -rf ${REPO_BASE}/webapp
+#rm -rf ${REPO_BASE}/engine
+
+echo "Done."

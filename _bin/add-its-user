@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker exec rdb mysql its -e "INSERT INTO account (id,email,password,name,section,type,admin_role,enabled) SELECT '6abc1812-bddd-11e4-afe9-bcee7bdb59fb','guest@prutor.edu',REPLACE('#2a#10#MGo.DISeTrzvWIRXDqPfruP24kDJ8.K0xpbaWaqJQ6xrU911Oj6Jy','#','\$'),'Guest User','X1','ADMIN',0,1"

@@ -1,0 +1,11 @@
+{
+	"service": {
+		"name": "its.database",
+		"tags": ["mysql"],
+		"port": 3306,
+		"check": {
+			"script": "mysql -e \"SELECT id FROM its.account LIMIT 1\"",
+			"interval": "10s"
+		}
+	}
+}

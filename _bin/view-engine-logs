@@ -1,0 +1,14 @@
+#!/bin/bash
+
+NUM_LINES=${1-100}
+
+ENGINES=$(docker ps | grep prutor/engine | awk '{print $1}')
+
+for E in $ENGINES
+do
+NAME=$(docker inspect --format '{{ .Name }}' $E)
+tput setaf 2
+echo "[ENGINE: "$NAME"]"
+tput sgr0
+docker exec $E tail -n $NUM_LINES /var/log/apache2/error.log
+done

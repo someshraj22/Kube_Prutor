@@ -1,0 +1,31 @@
+#!/bin/bash
+
+PORT=${1-3228}
+. ../_config/config.ini
+
+function help()
+{
+    echo
+    echo "USAGE:"
+    echo "    $0 [port]"
+    echo "    port: the port where pythonplot web interface will run"
+    echo "          (default: 3228)"
+    echo
+}
+
+if [[ "x$PORT" == "x-h" ]]; then
+   help
+   exit 0
+fi
+
+re='^[0-9]+$'
+if ! [[ $PORT =~ $re ]] ; then
+   echo "error: Invalid Port specified" >&2 
+   help
+   exit 1
+fi
+
+PLOTDIR=$REPO_BASE/engine/data/tmp/plots
+mkdir -p $PLOTDIR
+chown www-data:www-data $PLOTDIR
+docker run --privileged -d --name pythonplot -v $PLOTDIR:/var/www -p $PORT:80 prutor/pythonplot

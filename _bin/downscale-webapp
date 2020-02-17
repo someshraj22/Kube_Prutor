@@ -1,0 +1,22 @@
+#!/bin/bash
+
+WEBAPPS=$(docker ps | grep prutor/webapp | awk '{print $1}')
+
+MAX=0
+for W in $WEBAPPS
+do
+NAME=$(docker inspect --format '{{ .Name }}' $W)
+INDEX=${NAME:7}
+if [ $INDEX -gt $MAX ]
+then
+MAX=$INDEX
+fi
+done
+
+NAME=webapp$MAX
+
+docker exec $NAME consul leave
+docker stop $NAME
+docker rm $NAME
+
+echo "downscaled."

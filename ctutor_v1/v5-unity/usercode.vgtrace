@@ -1,0 +1,1472 @@
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 9, "IP": "0x4005FE", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 9, "SP": "0xFFEFFFCB8",  "FP": "0x4006A0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 9, "IP": "0x4005FF", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 9, "SP": "0xFFEFFFCB0",  "FP": "0x4006A0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC88", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC88", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC8A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC8C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC8E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC80", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]},
+{"func_name":"???", "line": -999, "SP": "0xFFEFFFCB8",  "FP": "0x4006A0", "locals": {
+},
+"ordered_varnames": []}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 9, "IP": "0x400602", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 9, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC88", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC88", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC8A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC8C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC8E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC80", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]},
+{"func_name":"???", "line": -999, "SP": "0xFFEFFFCB8",  "FP": "0xFFEFFFCB0", "locals": {
+},
+"ordered_varnames": []}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 9, "IP": "0x400606", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 9, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 9, "IP": "0x40060F", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 9, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 9, "IP": "0x400613", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 9, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 11, "IP": "0x400615", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 11, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 12, "IP": "0x40061B", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 12, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 13, "IP": "0x400621", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 13, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 14, "IP": "0x400627", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 14, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 15, "IP": "0x40062D", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 15, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 17, "IP": "0x400633", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 15, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 17, "IP": "0x400638", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 17, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 17, "IP": "0x40063D", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 17, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 18, "IP": "0x400641", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 18, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 18, "IP": "0x400645", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 18, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 19, "IP": "0x400648", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 19, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 19, "IP": "0x40064C", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 19, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 19, "IP": "0x400650", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 19, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 20, "IP": "0x400653", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 20, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 20, "IP": "0x400657", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 20, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 20, "IP": "0x40065B", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 20, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 21, "IP": "0x40065E", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 21, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 21, "IP": "0x400662", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 21, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 21, "IP": "0x400666", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 21, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 23, "IP": "0x400669", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 23, "IP": "0x40066D", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 23, "IP": "0x400671", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 23, "IP": "0x400674", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "main", "line": 23, "IP": "0x400677", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 4, "IP": "0x4005D6", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 4, "SP": "0xFFEFFFC78",  "FP": "0xFFEFFFCB0", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 4, "IP": "0x4005D7", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 4, "SP": "0xFFEFFFC70",  "FP": "0xFFEFFFCB0", "locals": {
+  "short_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+,  "char_array": {"addr":"0xFFEFFFC58", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"???", "line": -999, "SP": "0xFFEFFFC78",  "FP": "0xFFEFFFCB0", "locals": {
+},
+"ordered_varnames": []}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 4, "IP": "0x4005DA", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 4, "SP": "0xFFEFFFC70",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+,  "char_array": {"addr":"0xFFEFFFC58", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"???", "line": -999, "SP": "0xFFEFFFC78",  "FP": "0xFFEFFFC70", "locals": {
+},
+"ordered_varnames": []},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 4, "IP": "0x4005DE", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 4, "SP": "0xFFEFFFC60",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 4, "IP": "0x4005E2", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 4, "SP": "0xFFEFFFC60",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"0xFFEFFFC90"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 5, "IP": "0x4005E6", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 5, "SP": "0xFFEFFFC60",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"0xFFEFFFC90"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 5, "IP": "0x4005EA", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 5, "SP": "0xFFEFFFC60",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"0xFFEFFFC90"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 5, "IP": "0x4005ED", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 5, "SP": "0xFFEFFFC60",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"0xFFEFFFC90"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBob"
+{
+"func_name": "arrayParams", "line": 5, "IP": "0x4005F2", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 5, "SP": "0xFFEFFFC60",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"0xFFEFFFC90"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "arrayParams", "line": 6, "IP": "0x4005F7", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 6, "SP": "0xFFEFFFC60",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"0xFFEFFFC90"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "arrayParams", "line": 7, "IP": "0x4005FC", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 7, "SP": "0xFFEFFFC60",  "FP": "0xFFEFFFC70", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"0xFFEFFFC90"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "arrayParams", "line": 7, "IP": "0x4005FD", "kind": 0, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"arrayParams", "line": 7, "SP": "0xFFEFFFC78",  "FP": "0xFFEFFFCB0", "locals": {
+  "short_array": {"addr":"0xFFEFFFC68", "kind":"pointer", "size":8, "val":"0xFFEFFFC90"}
+,  "char_array": {"addr":"0xFFEFFFC60", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["short_array","char_array"]},
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040"}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "main", "line": 24, "IP": "0x40067C", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 24, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "main", "line": 25, "IP": "0x400681", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 25, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "main", "line": 25, "IP": "0x400685", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 25, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "main", "line": 25, "IP": "0x40068E", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 25, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "main", "line": 25, "IP": "0x400695", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 25, "SP": "0xFFEFFFC80",  "FP": "0xFFEFFFCB0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}
+=== pg_trace_inst ===
+STDOUT: "BobBobBob"
+{
+"func_name": "main", "line": 25, "IP": "0x400696", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 25, "SP": "0xFFEFFFCB8",  "FP": "0x4006A0", "locals": {
+  "stack_shorts": {"addr":"0xFFEFFFC90", "kind":"array", "size":10, "dimensions": [10], "val": [
+  {"addr":"0xFFEFFFC90", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC92", "kind":"base", "type":"short int", "size":2, "val":1},
+  {"addr":"0xFFEFFFC94", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC96", "kind":"base", "type":"short int", "size":2, "val":3},
+  {"addr":"0xFFEFFFC98", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9A", "kind":"base", "type":"short int", "size":2, "val":5},
+  {"addr":"0xFFEFFFC9C", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFC9E", "kind":"base", "type":"short int", "size":2, "val":7},
+  {"addr":"0xFFEFFFCA0", "kind":"base", "type":"short int", "size":2, "val":"<UNINITIALIZED>"},
+  {"addr":"0xFFEFFFCA2", "kind":"base", "type":"short int", "size":2, "val":9}
+]}
+,  "heap_str": {"addr":"0xFFEFFFC88", "kind":"pointer", "size":8, "val":"0x5406040", "deref_val":
+{"addr":"0x5406040", "kind":"heap_block", "val": [
+  {"addr":"0x5406040", "kind":"base", "type":"char", "size":1, "val":"B"},
+  {"addr":"0x5406041", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x5406042", "kind":"base", "type":"char", "size":1, "val":"b"},
+  {"addr":"0x5406043", "kind":"base", "type":"char", "size":1, "val":"\\0"},
+  {"addr":"0x5406044", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406045", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"},
+  {"addr":"0x5406046", "kind":"base", "type":"char", "size":1, "val":"<UNINITIALIZED>"}]}}
+},
+"ordered_varnames": ["stack_shorts","heap_str"]}]
+}

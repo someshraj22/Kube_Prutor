@@ -1,0 +1,4 @@
+e82_104682.c: In function 'main':
+e82_104682.c:6:11: warning: unused variable 'x' [-Wunused-variable]
+     float x = ((5 + 4) * (3 - 1) / (4 + 2));
+           ^

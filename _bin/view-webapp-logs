@@ -1,0 +1,14 @@
+#!/bin/bash
+
+NUM_LINES=${1-100}
+
+WEBAPPS=$(docker ps | grep prutor/webapp | awk '{print $1}')
+
+for W in $WEBAPPS
+do
+NAME=$(docker inspect --format '{{ .Name }}' $W)
+tput setaf 2
+echo "[WEBAPP: "$NAME"]"
+tput sgr0
+docker exec $W forever logs 0 -n $NUM_LINES
+done

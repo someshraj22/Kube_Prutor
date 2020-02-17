@@ -1,0 +1,11 @@
+{
+	"service": {
+		"name": "its.ctutor",
+		"tags": ["python"],
+		"port": 8003,
+		"check": {
+                        "script": "curl localhost:8003/visualize.html >/dev/null 2>&1",
+                        "interval": "10s"
+                }
+	}
+}

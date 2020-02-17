@@ -1,0 +1,8 @@
+#!/bin/bash
+
+INSTANCES=$(docker ps | grep prutor/webapp | awk '{print $1}')
+
+for CONTAINER in $INSTANCES
+do
+docker exec $CONTAINER node-restart
+done

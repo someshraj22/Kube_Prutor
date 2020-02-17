@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd v5-unity && gunicorn -b 0.0.0.0:8003 -D -w 3 -k gevent --log-file /var/log/ctutorlog --log-level debug --access-logfile /var/log/serverlog bottle_server:app
+
+supervisord -c /etc/supervisord.conf
